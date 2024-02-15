@@ -28,8 +28,11 @@ export async function generateMetadata({
 
 export default async function ChatPage({ params }: ChatPageProps) {
   const session = await auth()
+  console.log({ params, session })
 
   if (!session?.user) {
+    console.log('shit it ridrected')
+    // redirect(`/sign-in?next=/chat/${params.id}`)
     redirect(`/sign-in?next=/chat/${params.id}`)
   }
 

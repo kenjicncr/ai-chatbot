@@ -41,6 +41,9 @@ async function UserOrLogin() {
             <Link href="/sign-in?callbackUrl=/">Login</Link>
           </Button>
         )}
+          <Button variant="link" asChild className="-ml-2">
+            <Link href="/chat/1">Chat</Link>
+          </Button>
       </div>
     </>
   )
